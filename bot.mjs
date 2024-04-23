@@ -1,7 +1,4 @@
-import "./styles.css";
-import "./index.html";
-import "./data.js";
-
+// translation of discord.py to js without api
 const morph_price = window.morph_price
 const sex_adjustment = window.sex_adjustment;
 const morph_names = window.morph_names;
@@ -71,11 +68,3 @@ const { total_price_str, morph_names_str } = calculateTotalPrice(morphs);
 
 // Generate the response
 const response = `Total price for a (${sex_str}) ${morph_names_str} Ball Python at ${weight} grams is ${total_price_str}.`;
-
-module.exports = { calculateTotalPrice };
-module.exports = {  };
-module.exports = {  };
-module.exports = {  };
-
-
-window.response = response;
