@@ -1,0 +1,26 @@
+# Python Breeders Chat Application
+
+Welcome to the Python Breeders Chat Application! This is a responsive chat application designed for Python enthusiasts. The application features an interactive bot that provides helpful information about various Python breeds.
+
+## Features
+
+- **Interactive Chat Bot**: Ask the bot about various Python breeds and get instant responses.
+- **Responsive Design**: The application is designed to be responsive and can be used on various devices with different screen sizes.
+- **Easy to Use**: The user interface is intuitive and easy to navigate.
+
+## How to Use
+
+To start using the Python Breeders Chat Application, simply navigate to the website. Once you're on the site, you can start interacting with the bot in the chat interface. Type your message into the input field and press 'Send' or hit Enter to send your message.
+
+The bot understands several commands:
+
+- `/help`: Provides information about other commands.
+- `/list`: Lists all available Python breeds.
+- `/price`: Calculates the price of a Python breed. Usage: 
+    - `/price <sex> <weight> <morph> [morphs]`
+
+## Feedback
+
+We'd love to hear your feedback! If you have any suggestions or encounter any issues, please let us know.
+
+Enjoy chatting with our Python bot!

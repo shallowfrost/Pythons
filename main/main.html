@@ -1,0 +1,40 @@
+<!-- main.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="Responsive Chat for Python Breeders" />
+	<meta name="description"
+		content="A responsive chat application designed for Python enthusiasts to interact with a bot that provides information about various Python breeds.">
+	<meta property="og:url" content="https://shallowfrost.github.io/Pythons/main/main.html" />
+	<meta property="og:image" content="https://shallowfrost.github.io/Pythons/assets/images/icon.html" />
+	<title>Responsive Chat for Python Breeders</title>
+	<link rel="icon" type="image/svg+xml" href="../assets/images/icon.jpg">
+	<link rel="stylesheet" href="../assets/styles/global.css">
+	<link rel="stylesheet" href="../assets/styles/chatinterface.css">
+</head>
+
+<body>
+    <div class="main-chat-container">
+        <div class="chat-header">
+            <!-- Chat header content -->
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <!-- Messages will appear here -->
+        </div>
+        <div id="suggestionBox">
+            <!-- Suggestions will appear here -->
+        </div>
+        <div class="chat-input-container">
+            <input type="text" id="userInput" placeholder="Type your message...">
+            <button id="sendButton">Send</button>
+        </div>
+    </div>
+	<script type="module" src="../assets/data/data.js"    defer></script>
+	<script type="module" src="../assets/scripts/bot.mjs" defer></script>
+	<script type="module" src="../assets/scripts/main.js" defer></script>
+</body>
+
+</html>

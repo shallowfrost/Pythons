@@ -1,0 +1,18 @@
+{
+    "short_name": "Python Chat",
+    "name": "Python Breeders Chat Application",
+    "description": "A responsive chat application featuring a bot that provides helpful information about various Python breeds, prices.",
+    "lang": "en",
+    "icons": [
+        {
+            "src": "../assets/images/icon.jpg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        }
+    ],
+    "start_url": "./main.html",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#000000"
+}

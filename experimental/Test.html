@@ -1,0 +1,218 @@
+<!-- Test.html -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Morph Breeding Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        select,
+        button {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Morph Breeding Calculator</h1>
+    <label for="parent1">Select Parent 1:</label>
+    <input list="morphs1" id="parent1">
+    <datalist id="morphs1">
+        <!-- Options will be populated by JavaScript -->
+    </datalist>
+    <div id="parent1-info"></div>
+
+    <label for="parent2">Select Parent 2:</label>
+    <input list="morphs2" id="parent2">
+    <datalist id="morphs2">
+        <!-- Options will be populated by JavaScript -->
+    </datalist>
+    <div id="parent2-info"></div>
+
+    <button onclick="breedMorphs()">Breed</button>
+    <div id="result"></div>
+    <script src="data.js"></script>
+    <script>
+        const morphs = window.morphs;
+
+        // Define the breeding function
+        function breedAll(morph1, morph2) {
+            const offspring = [];
+
+            // If both parents are "Super," the offspring will also be "Super"
+            if (morph1.type === 'Super' && morph2.type === 'Super') {
+                offspring.push({ name: 'Super', type: 'Super' });
+            } else if (morph1.type === 'Het' || morph2.type === 'Het') {
+                // If at least one parent is "Het," consider all possibilities
+                offspring.push({ name: 'Het', type: 'Het' });
+                offspring.push({ name: 'Normal', type: 'Normal' });
+            } else {
+                // If neither parent is "Het," the offspring will be "Normal"
+                offspring.push({ name: 'Normal', type: 'Normal' });
+            }
+
+            return offspring;
+        }
+
+        // Populate the dropdowns with morphs
+        function populateDropdowns() {
+            let parent1 = document.getElementById('morphs1');
+            let parent2 = document.getElementById('morphs2');
+            morphs.forEach(morph => {
+                let option1 = document.createElement('option');
+                option1.value = morph.name;
+                option1.textContent = morph.name;
+                parent1.appendChild(option1);
+
+                let option2 = document.createElement('option');
+                option2.value = morph.name;
+                option2.textContent = morph.name;
+                parent2.appendChild(option2);
+            });
+        }
+
+        // Function to breed morphs and display result
+        function breedMorphs() {
+            let parent1Index = document.getElementById('parent1').selectedIndex;
+            let parent2Index = document.getElementById('parent2').selectedIndex;
+            let parent1 = morphs[parent1Index];
+            let parent2 = morphs[parent2Index];
+            let offspringArray = breedAll(parent1, parent2);
+            let resultText = 'The possible offspring are: ';
+
+            // Create a string listing all possible offspring traits
+            offspringArray.forEach((offspring, index) => {
+                resultText += offspring.name + ' with ' + offspring.type + ' trait';
+                if (index < offspringArray.length - 1) {
+                    resultText += ', ';
+                }
+            });
+
+            // Add parent traits to the result
+            resultText += '\n\nParent 1 Traits: ' + listTraits(parent1);
+            resultText += '\nParent 2 Traits: ' + listTraits(parent2);
+
+            document.getElementById('result').textContent = resultText;
+        }
+
+        // Helper function to list traits of a parent
+        function listTraits(parent) {
+            let traits = parent.name + ' (' + parent.type;
+            if (parent.probability) {
+                traits += ', ' + parent.probability + '% probability';
+            }
+            traits += ')';
+            return traits;
+        }
+
+        // Function to display detailed morph information
+        function displayMorphInfo(parentId, infoId) {
+            let parentIndex = document.getElementById(parentId).selectedIndex;
+            let parent = morphs[parentIndex];
+            let infoText = 'Name: ' + parent.name + ', Type: ' + parent.type;
+            document.getElementById(infoId).textContent = infoText;
+        }
+
+        // Add event listeners to display detailed morph information when a morph is selected
+        document.getElementById('parent1').addEventListener('change', function() {
+            displayMorphInfo('parent1', 'parent1-info');
+        });
+        document.getElementById('parent2').addEventListener('change', function() {
+            displayMorphInfo('parent2', 'parent2-info');
+        });
+
+        // Initialize the dropdowns on page load
+        window.onload = function() {
+            populateDropdowns();
+            displayMorphInfo('parent1', 'parent1-info');
+            displayMorphInfo('parent2', 'parent2-info');
+        };
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const morphs = [
+    {
+        name: 'Morph1',
+        type: 'Type1',
+        rarity: 'Common',
+        characteristics: {
+            color: { 
+                inheritanceType: 'Dominant',
+                alleles: ['Brown', 'Green'],
+                genotype: ['B', 'b']
+            },
+            size: {
+                inheritanceType: 'Polygenic',
+                genes: ['Gene1', 'Gene2', 'Gene3'],
+                genotypes: [['G1', 'g1'], ['G2', 'g2'], ['G3', 'g3']]
+            },
+            pattern: {
+                inheritanceType: 'Epistatic',
+                alleles: ['Pattern1', 'Pattern2'],
+                genotype: ['P', 'p'],
+                epistaticGenes: ['Gene4', 'Gene5'],
+                epistaticGenotypes: [['E4', 'e4'], ['E5', 'e5']]
+            },
+            shape: {
+                inheritanceType: 'Dominant',
+                alleles: ['Shape1', 'Shape2', 'Shape3'],
+                genotype: ['S', 's']
+            },
+            lifespan: {
+                inheritanceType: 'Polygenic',
+                genes: ['Gene6', 'Gene7', 'Gene8'],
+                genotypes: [['L1', 'l1'], ['L2', 'l2'], ['L3', 'l3']]
+            },
+            speed: {
+                inheritanceType: 'Polygenic',
+                genes: ['Gene9', 'Gene10', 'Gene11'],
+                genotypes: [['S1', 's1'], ['S2', 's2'], ['S3', 's3']]
+            },
+            diet: {
+                inheritanceType: 'Dominant',
+                alleles: ['Diet1', 'Diet2'],
+                genotype: ['D', 'd']
+            },
+            temperament: {
+                inheritanceType: 'Polygenic',
+                genes: ['Gene12', 'Gene13', 'Gene14'],
+                genotypes: [['T1', 't1'], ['T2', 't2'], ['T3', 't3']]
+            },
+            resistance: {
+                inheritanceType: 'Dominant',
+                alleles: ['Resistance1', 'Resistance2'],
+                genotype: ['R', 'r']
+            }
+        },
+    },
+];

@@ -1,0 +1,466 @@
+"1: Normal",
+"2: Pastel",
+"3: Yellow Belly",
+"4: Enchi",
+"5: Fire",
+"6: Leopard",
+"7: Hypo",
+"8: Clown",
+"9: Desert Ghost",
+"10: Albino",
+"11: Piebald",
+"12: Acid",
+"13: Super Acid",
+"14: Het Albino",
+"15: Asphalt",
+"16: Super Ashphalt",
+"17: Axanthic(TSK)",
+"18: Het Axanthic (TSK)",
+"19: Axanthic (VPI)",
+"20: Het Axanthic (VPI)",
+"21: Bamboo",
+"22: Super Bamboo",
+"23: Banana",
+"24: Super Banana",
+"25: Blackhead",
+"26: Super Blackhead",
+"27: Black Pastel",
+"28: Blade",
+"29: Super Blade",
+"30: Bongo",
+"31: Super Bongo",
+"32: Butter",
+"33: Super Butter",
+"34: Calico",
+"35: Candy",
+"36: Het Candy",
+"37: Candino",
+"38: Champagne",
+"39: Chocolate",
+"40: Super Chocolate",
+"41: Cinnamon",
+"42: Het Clown",
+"43: Confusion",
+"44: Coral Glow",
+"45: Super Coral Glow",
+"46: Cryptic",
+"47: Het Cryptic",
+"48: Cypress",
+"49: Disco",
+"50: Super Disco",
+"51: Enhancer",
+"52: Het Enhancer",
+"53: Genetic Stripe",
+"54: Het Genetic Stripe",
+"55: GeneX",
+"56: GHI",
+"57: Super GHI",
+"58: Granite",
+"59: Gravel",
+"60: Super Gravel",
+"61: Het Red Axanthix",
+"62: Hidden Gene Woma",
+"63: Huffman",
+"64: Hurricane",
+"65: Super Hurricane",
+"66: Het Hypo",
+"67: Lavender Albino",
+"68: Het Lavender Albino",
+"69: Lesser",
+"70: Super Lesser",
+"71: Lucifer",
+"72: Mahogany",
+"73: Super Mahogany",
+"74: Mojave",
+"75: Super Mojave",
+"76: Monsoon",
+"77: Fractal",
+"78: Mystic",
+"79: Super Mystic",
+"80: Orange Dream",
+"81: Super Orange Dream",
+"82: Orange Ghost",
+"83: Het Orange Ghost",
+"84: Paint",
+"85: Het Paint",
+"86: Phantom",
+"87: Super Phantom",
+"88: Het Piebald",
+"89: Pinstripe",
+"90: Puzzle",
+"91: Rainbow",
+"92: Het Rainbow",
+"93: Red Stripe",
+"94: Super Red Stripe",
+"95: Russo",
+"96: Super Russo",
+"97: Spark",
+"98: Super Spark",
+"99: Special",
+"100: Super Special",
+"101: Specter",
+"102: Super Specter",
+"103: Spider",
+"104: Spotnose",
+"105: Stranger",
+"106: Sugar",
+"107: Sunset",
+"108: Het Sunset",
+"109: Toffee",
+"110: Het Toffee",
+"111: Toffino",
+"112: Tri-Stripe",
+"113: Het Tri-Stripe",
+"114: Ultramel",
+"115: Het Ultramel",
+"116: Vanilla",
+"117: Super Vanilla",
+"118: Wookie",
+"119: Super Yellow Belly",
+"120: Zebra",
+"121: Het Zebra"
+
+
+
+
+
+window.morphs = [
+  {id:'1',name:'Normal',type:'Normal',price:'',rarity:''},
+  {id:'2',name:'Pastel',type:'Normal',price:'',rarity:''},
+  {id:'3',name:'Yellow Belly',type:'Normal',price:'',rarity:''},
+  {id:'4',name:'Enchi',type:'Normal',price:'',rarity:''},
+  {id:'5',name:'Fire',type:'Normal',price:'',rarity:''},
+  {id:'6',name:'Leopard',type:'Normal',price:'',rarity:''},
+  {id:'7',name:'Hypo',type:'Normal',price:'',rarity:''},
+  {id:'8',name:'Clown',type:'Normal',price:'',rarity:''},
+  {id:'9',name:'Desert Ghost',type:'Normal',price:'',rarity:''},
+  {id:'10',name:'Albino',type:'Het',probability:100,price:'',rarity:''},
+  {id:'11',name:'Piebald',type:'Normal',price:'',rarity:''},
+  {id:'12',name:'Acid',type:'Normal',price:'',rarity:''},
+  {id:'13',name:'Acid',type:'Super',price:'',rarity:''},
+  {id:'14',name:'Albino',type:'Het',probability:100,price:'',rarity:''},
+  {id:'15',name:'Asphalt',type:'Normal',price:'',rarity:''},
+  {id:'16',name:'Asphalt',type:'Super',price:'',rarity:''},
+  {id:'17',name:'Axanthic (TSK)',type:'Normal',price:'',rarity:''},
+  {id:'18',name:'Axanthic (TSK)',type:'Het',probability:100,price:'',rarity:''},
+  {id:'19',name:'Axanthic (VPI)',type:'Normal',price:'',rarity:''},
+  {id:'20',name:'Axanthic (VPI)',type:'Het',probability:100,price:'',rarity:''},
+  {id:'21',name:'Bamboo',type:'Normal',price:'',rarity:''},
+  {id:'22',name:'Bamboo',type:'Super',price:'',rarity:''},
+  {id:'23',name:'Banana',type:'Normal',price:'',rarity:''},
+  {id:'24',name:'Banana',type:'Super',price:'',rarity:''},
+  {id:'25',name:'Blackhead',type:'Normal',price:'',rarity:''},
+  {id:'26',name:'Blackhead',type:'Super',price:'',rarity:''},
+  {id:'27',name:'Black Pastel',type:'Normal',price:'',rarity:''},
+  {id:'28',name:'Blade',type:'Normal',price:'',rarity:''},
+  {id:'29',name:'Blade',type:'Super',price:'',rarity:''},
+  {id:'30',name:'Bongo',type:'Normal',price:'',rarity:''},
+  {id:'31',name:'Bongo',type:'Super',price:'',rarity:''},
+  {id:'32',name:'Butter',type:'Normal',price:'',rarity:''},
+  {id:'33',name:'Butter',type:'Super',price:'',rarity:''},
+  {id:'34',name:'Calico',type:'Normal',price:'',rarity:''},
+  {id:'35',name:'Candy',type:'Normal',price:'',rarity:''},
+  {id:'36',name:'Candy',type:'Het',probability:100,price:'',rarity:''},
+  {id:'37',name:'Candino',type:'Normal',price:'',rarity:''},
+  {id:'38',name:'Champagne',type:'Normal',price:'',rarity:''},
+  {id:'39',name:'Chocolate',type:'Normal',price:'',rarity:''},
+  {id:'40',name:'Chocolate',type:'Super',price:'',rarity:''},
+  {id:'41',name:'Cinnamon',type:'Normal',price:'',rarity:''},
+  {id:'42',name:'Clown',type:'Het',probability:100,price:'',rarity:''},
+  {id:'43',name:'Confusion',type:'Normal',price:'',rarity:''},
+  {id:'44',name:'Coral Glow',type:'Normal',price:'',rarity:''},
+  {id:'45',name:'Coral Glow',type:'Super',price:'',rarity:''},
+  {id:'46',name:'Cryptic',type:'Normal',price:'',rarity:''},
+  {id:'47',name:'Cryptic',type:'Het',probability:100,price:'',rarity:''},
+  {id:'48',name:'Cypress',type:'Normal',price:'',rarity:''},
+  {id:'49',name:'Disco',type:'Normal',price:'',rarity:''},
+  {id:'50',name:'Disco',type:'Super',price:'',rarity:''},
+  {id:'51',name:'Enhancer',type:'Normal',price:'',rarity:''},
+  {id:'52',name:'Enhancer',type:'Het',probability:100,price:'',rarity:''},
+  {id:'53',name:'Genetic Stripe',type:'Normal',price:'',rarity:''},
+  {id:'54',name:'Genetic Stripe',type:'Het',probability:100,price:'',rarity:''},
+  {id:'55',name:'GeneX',type:'Normal',price:'',rarity:''},
+  {id:'56',name:'GHI',type:'Normal',price:'',rarity:''},
+  {id:'57',name:'GHI',type:'Super',price:'',rarity:''},
+  {id:'58',name:'Granite',type:'Normal',price:'',rarity:''},
+  {id:'59',name:'Gravel',type:'Normal',price:'',rarity:''},
+  {id:'60',name:'Gravel',type:'Super',price:'',rarity:''},
+  {id:'61',name:'Red Axanthix',type:'Het',probability:100,price:'',rarity:''},
+  {id:'62',name:'Hidden Gene Woma',type:'Normal',price:'',rarity:''},
+  {id:'63',name:'Huffman',type:'Normal',price:'',rarity:''},
+  {id:'64',name:'Hurricane',type:'Normal',price:'',rarity:''},
+  {id:'65',name:'Hurricane',type:'Super',price:'',rarity:''},
+  {id:'66',name:'Hypo',type:'Het',probability:100,price:'',rarity:''},
+  {id:'67',name:'Lavender Albino',type:'Normal',price:'',rarity:''},
+  {id:'68',name:'Lavender Albino',type:'Het',probability:100,price:'',rarity:''},
+  {id:'69',name:'Lesser',type:'Normal',price:'',rarity:''},
+  {id:'70',name:'Lesser',type:'Super',price:'',rarity:''},
+  {id:'71',name:'Lucifer',type:'Normal',price:'',rarity:''},
+  {id:'72',name:'Mahogany',type:'Normal',price:'',rarity:''},
+  {id:'73',name:'Mahogany',type:'Super',price:'',rarity:''},
+  {id:'74',name:'Mojave',type:'Normal',price:'',rarity:''},
+  {id:'75',name:'Mojave',type:'Super',price:'',rarity:''},
+  {id:'76',name:'Monsoon',type:'Normal',price:'',rarity:''},
+  {id:'77',name:'Fractal',type:'Normal',price:'',rarity:''},
+  {id:'78',name:'Mystic',type:'Normal',price:'',rarity:''},
+  {id:'79',name:'Mystic',type:'Super',price:'',rarity:''},
+  {id:'80',name:'Orange Dream',type:'Normal',price:'',rarity:''},
+  {id:'81',name:'Orange Dream',type:'Super',price:'',rarity:''},
+  {id:'82',name:'Orange Ghost',type:'Normal',price:'',rarity:''},
+  {id:'83',name:'Orange Ghost',type:'Het',probability:100,price:'',rarity:''},
+  {id:'84',name:'Paint',type:'Normal',price:'',rarity:''},
+  {id:'85',name:'Paint',type:'Het',probability:100,price:'',rarity:''},
+  {id:'86',name:'Phantom',type:'Normal',price:'',rarity:''},
+  {id:'87',name:'Phantom',type:'Super',price:'',rarity:''},
+  {id:'88',name:'Piebald',type:'Het',probability:100,price:'',rarity:''},
+  {id:'89',name:'Pinstripe',type:'Normal',price:'',rarity:''},
+  {id:'90',name:'Puzzle',type:'Normal',price:'',rarity:''},
+  {id:'91',name:'Rainbow',type:'Normal',price:'',rarity:''},
+  {id:'92',name:'Rainbow',type:'Het',probability:100,price:'',rarity:''},
+  {id:'93',name:'Red Stripe',type:'Normal',price:'',rarity:''},
+  {id:'94',name:'Red Stripe',type:'Super',price:'',rarity:''},
+  {id:'95',name:'Russo',type:'Normal',price:'',rarity:''},
+  {id:'96',name:'Russo',type:'Super',price:'',rarity:''},
+  {id:'97',name:'Spark',type:'Normal',price:'',rarity:''},
+  {id:'98',name:'Spark',type:'Super',price:'',rarity:''},
+  {id:'99',name:'Special',type:'Normal',price:'',rarity:''},
+  {id:'100',name:'Special',type:'Super',price:'',rarity:''},
+  {id:'101',name:'Specter',type:'Normal',price:'',rarity:''},
+  {id:'102',name:'Specter',type:'Super',price:'',rarity:''},
+  {id:'103',name:'Spider',type:'Normal',price:'',rarity:''},
+  {id:'104',name:'Spotnose',type:'Normal',price:'',rarity:''},
+  {id:'105',name:'Stranger',type:'Normal',price:'',rarity:''},
+  {id:'106',name:'Sugar',type:'Normal',price:'',rarity:''},
+  {id:'107',name:'Sunset',type:'Normal',price:'',rarity:''},
+  {id:'108',name:'Sunset',type:'Het',probability:100,price:'',rarity:''},
+  {id:'109',name:'Toffee',type:'Normal',price:'',rarity:''},
+  {id:'110',name:'Toffee',type:'Het',probability:100,price:'',rarity:''},
+  {id:'111',name:'Toffino',type:'Normal',price:'',rarity:''},
+  {id:'112',name:'Tri-Stripe',type:'Normal',price:'',rarity:''},
+  {id:'113',name:'Tri-Stripe',type:'Het',probability:100,price:'',rarity:''},
+  {id:'114',name:'Ultramel',type:'Normal',price:'',rarity:''},
+  {id:'115',name:'Ultramel',type:'Het',probability:100,price:'',rarity:''},
+  {id:'116',name:'Vanilla',type:'Normal',price:'',rarity:''},
+  {id:'117',name:'Vanilla',type:'Super',price:'',rarity:''},
+  {id:'118',name:'Wookie',type:'Normal',price:'',rarity:''},
+  {id:'119',name:'Yellow Belly',type:'Super',price:'',rarity:''},
+  {id:'120',name:'Zebra',type:'Normal',price:'',rarity:''},
+  {id:'121',name:'Zebra',type:'Het',probability:100,price:'',rarity:''}
+  ];
+
+
+  
+
+[1]: https://snakesnuggles.com/everything-you-need-to-know-about-snake-morphs/ ""
+[2]: https://snakesnuggles.com/what-is-a-snake-morph/ ""
+[3]: https://snakecareguide.com/king-snake-morphs/ ""
+
+Creating new snake morphs involves a combination of chance mutations and intentional breeding¹[1][1][2]. Here's a brief overview of the process:
+
+1. **Chance Mutations**: Sometimes, a snake is born with a genetic mutation that results in a unique physical characteristic, such as a different color or pattern¹[1][1]. This is a natural, random genetic change¹[1][1].
+
+2. **Selective Breeding**: Breeders can choose specific traits to breed for, such as color patterns or size¹[1][1]. By breeding snakes with these desired traits, they can create offspring that also exhibit these traits¹[1][1].
+
+3. **Crossbreeding**: This involves breeding two different species or morphs together to create a new hybrid¹[1][1]. The offspring will have a combination of traits from both parents¹[1][1].
+
+4. **Line Breeding**: This involves breeding closely related snakes to maintain or accentuate certain traits¹[1][1]. This can help to ensure that a particular trait is passed on to future generations¹[1][1].
+
+5. **Use of Punnett Squares**: These are tools used by breeders to predict the possible genetic outcomes of a breeding pair¹[1][1]. They can help breeders make informed pairing decisions¹[1][1].
+
+Once a new morph is created, it can be bred with other snakes to create even more unique morphs¹[1][1]. However, it's important to note that breeding for specific traits should be done responsibly, as it can sometimes lead to health issues in the snakes¹[1][1].
+
+Please note that this is a simplified explanation and the actual process can be quite complex. If you're interested in snake breeding, I recommend doing further research or consulting with a professional breeder. Let me know if you have any other questions! 😊
+
+Source: Conversation with Bing, 4/24/2024
+(1) Snake Morphs Demystified: Exploring Genetic Variations and Breeding .... https://snakesnuggles.com/everything-you-need-to-know-about-snake-morphs/.
+(2) Snake Morph Guide: Explore Genetic Mutations & Unique Reptile Traits. https://snakesnuggles.com/what-is-a-snake-morph/.
+(3) King Snake Morphs. https://snakecareguide.com/king-snake-morphs/.
+
+
+
+
+[1]: https://hognose-morphs.com/calculator ""
+[2]: https://snakesnuggles.com/snake-morphs/ ""
+[3]: https://bing.com/search?q=how+to+calculate+possible+offspring+of+snake+morphs ""
+[4]: https://calculator.services/corn-snake-morph-calculator/ ""
+[5]: https://calculatorey.com/morph-calculator-ball-python/ ""
+[6]: https://calculatorshub.net/animal-calculators/corn-snake-morph-calculator/ ""
+
+Creating a tool to predict the possible offspring of different combinations of snake morphs involves understanding the genetics of snake morphs and applying the principles of Mendelian inheritance¹[1][1][4][5][6]. Here's a simplified overview of how you could approach this:
+
+1. **Identify the Genetic Traits**: Each snake morph is associated with a set of genes¹[1][1][4][5][6]. You'll need to identify the genetic traits of each parent snake¹[1][1][4][5][6].
+
+2. **Create Combinations**: The tool should be able to combine each trait from the first parent with each trait from the second parent²[4][4]. This results in a list of possible offspring morphs²[4][4].
+
+3. **Calculate Probabilities**: Based on the principles of Mendelian inheritance, you can calculate the probability of each possible offspring morph appearing¹[1][1][4][5][6]. For example, if both parents are heterozygous for a trait (i.e., they carry one copy of the gene), there's a 25% chance the offspring will be homozygous dominant (i.e., carry two copies of the gene), a 50% chance the offspring will be heterozygous, and a 25% chance the offspring will be homozygous recessive (i.e., carry no copies of the gene).
+
+Here's a simple Python code snippet that demonstrates how you might start creating such a tool:
+
+```python
+// Define the genetic traits of the parent snakes
+let parent1_traits = ['trait1', 'trait2', 'trait3'",]"
+let parent2_traits = ['trait1', 'trait2', 'trait3'",]"
+
+// Create an array to store the possible offspring morphs
+let possible_offspring = [",]"
+
+// Combine each trait from the first parent with each trait from the second parent
+for (let trait1 of parent1_traits) {
+    for (let trait2 of parent2_traits) {
+        // Add the combination to the array of possible offspring
+        possible_offspring.push(`${trait1} x ${trait2}`",)"
+    }
+}
+
+// Print the array of possible offspring
+for (let i = ",0" i < possible_offspring.lengt",h" i++) {
+    console.log(`${i+1}: ${possible_offspring[i]}`",)"
+}
+```
+
+This is a very simplified example and the actual process would be much more complex, taking into account dominant and recessive genes, co-dominance, incomplete dominance, and more¹[1][1][4][5][6]. If you're interested in creating such a tool, I recommend studying genetics and consulting with a herpetologist or a professional breeder. Let me know if you have any other questions! 😊
+
+Source: Conversation with Bing, 4/24/2024
+(1) Hognose Morphs | Calculator. https://hognose-morphs.com/calculator.
+(2) Snake Morphs: Guide to Genetics, Popular Types & Breeding Tips. https://snakesnuggles.com/snake-morphs/.
+(3) Corn Snake Morph Calculator: Predict Your Snake’s Offspring Traits. https://bing.com/search?q=how+to+calculate+possible+offspring+of+snake+morphs.
+(4) Morph Calculator Ball Python - Calculatorey. https://calculatorey.com/morph-calculator-ball-python/.
+(5) Corn Snake Morph Calculator Online. https://calculatorshub.net/animal-calculators/corn-snake-morph-calculator/.
+
+
+
+
+
+
+Sure, I can help you understand how to implement these genetic concepts in your code. However, please note that this is a complex topic and the following is a simplified explanation.
+
+In genetics, there are several ways traits can be inherited:
+
+1. **Dominant and Recessive Genes**: A dominant gene is one that will show up in the offspring if one of the parents contributes it. A recessive gene will only show up if both parents contribute it. In JavaScript, you could represent this with an `if` statement checking if the dominant gene is present.
+
+2. **Co-Dominance**: In co-dominance, both genes want to fully express themselves. An example of this is the AB blood type in humans, where both the A and B alleles are co-dominant. You could represent this by checking if both genes are present and, if so, expressing both.
+
+3. **Incomplete Dominance**: In incomplete dominance, neither gene is fully dominant, so the offspring ends up with a blend of the parents' traits. You could represent this by checking if both genes are present and, if so, creating a blend of the two.
+
+Here's a simplified example of how you might implement these concepts in JavaScript:
+
+```javascript
+function getOffspringTrait(parent1_trait, parent2_trait) {
+    // Check for dominance
+    if (isDominant(parent1_trait) || isDominant(parent2_trait)) {
+        return getDominantTrait(parent1_trait, parent2_trait",)"
+    }
+
+    // Check for co-dominance
+    if (isCoDominant(parent1_trait, parent2_trait)) {
+        return parent1_trait + " " + parent2_trai",t"
+    }
+
+    // Check for incomplete dominance
+    if (isIncompleteDominant(parent1_trait, parent2_trait)) {
+        return getBlendedTrait(parent1_trait, parent2_trait",)"
+    }
+
+    // If none of the above apply, return a default trait
+    return "default trait",""
+}
+```
+
+In this example, `isDominant`, `getDominantTrait`, `isCoDominant`, `isIncompleteDominant`, and `getBlendedTrait` would be additional functions you'd define based on your specific rules for dominance, co-dominance, and incomplete dominance.
+
+Please note that this is a very simplified example and the actual implementation would be much more complex, taking into account the specific traits and rules of snake genetics. If you're interested in creating such a tool, I recommend studying genetics and consulting with a herpetologist or a professional breeder. Let me know if you have any other questions! 😊
+
+
+
+
+
+
+
+
+
+Sure, let's break down how you might implement these genetic concepts in your code. I'll provide a simplified example in JavaScript.
+
+1. **Dominant and Recessive Genes**: A dominant gene is one that will show up in the offspring if one of the parents contributes it. A recessive gene will only show up if both parents contribute it. In JavaScript, you could represent this with an `if` statement checking if the dominant gene is present.
+
+```javascript
+function isDominant(trait) {
+    // Define your dominant traits here
+    let dominantTraits = ['trait1', 'trait2'",]"
+
+    // Check if the trait is dominant
+    return dominantTraits.includes(trait",)"
+}
+```
+
+2. **Co-Dominance**: In co-dominance, both genes want to fully express themselves. An example of this is the AB blood type in humans, where both the A and B alleles are co-dominant. You could represent this by checking if both genes are present and, if so, expressing both.
+
+```javascript
+function isCoDominant(trait1, trait2) {
+    // Define your co-dominant pairs here
+    let coDominantPairs = [['trait3', 'trait4'], ['trait5', 'trait6']",]"
+
+    // Check if the traits are co-dominant
+    return coDominantPairs.some(pair => pair.includes(trait1) && pair.includes(trait2)",)"
+}
+```
+
+3. **Incomplete Dominance**: In incomplete dominance, neither gene is fully dominant, so the offspring ends up with a blend of the parents' traits. You could represent this by checking if both genes are present and, if so, creating a blend of the two.
+
+```javascript
+function isIncompleteDominant(trait1, trait2) {
+    // Define your incomplete dominant pairs here
+    let incompleteDominantPairs = [['trait7', 'trait8'], ['trait9', 'trait10']",]"
+
+    // Check if the traits are incomplete dominant
+    return incompleteDominantPairs.some(pair => pair.includes(trait1) && pair.includes(trait2)",)"
+}
+
+function getBlendedTrait(trait1, trait2) {
+    // Define your blended traits here
+    let blendedTraits = {
+        'trait7_trait8': 'blendedTrait1',
+        'trait9_trait10': 'blendedTrait2'
+    ",}"
+
+    // Get the blended trait
+    return blendedTraits[`${trait1}_${trait2}`] || blendedTraits[`${trait2}_${trait1}`",]"
+}
+```
+
+Please note that this is a very simplified example and the actual implementation would be much more complex, taking into account the specific traits and rules of snake genetics. If you're interested in creating such a tool, I recommend studying genetics and consulting with a herpetologist or a professional breeder. Let me know if you have any other questions! 😊
+
+
+
+
+
+
+
+[1]: https://ball-pythons.net/forums/showthread.php?225712-100-66-50-het-explaination-help ""
+[2]: https://community.morphmarket.com/t/hets-explained-in-plain-english/28124 ""
+[3]: https://www.reptileadvisor.com/ball-python-morphs/ ""
+[4]: https://stackoverflow.com/questions/21639788/difference-between-super-and-calling-superclass-directly ""
+[5]: https://ball-pythons.net/forums/showthread.php?52847-A-Lesson-in-Basic-Genetics ""
+
+In the world of pythons, particularly when discussing morphs, the terms "het", "super", and "normal" are used to describe different genetic conditions:
+
+1. **Het**: This is short for heterozygous, which means the python carries one copy of a recessive gene¹[2]. For example, if you have a python that is "100% het for Albino", it means the python carries one copy of the Albino gene but does not visually express it¹[2]. The percentages (100%, 66%, 50%) refer to the probability that the python carries the gene²[1]³[5]. For instance, in a Het x Normal pairing, each offspring has a 50% chance of carrying the gene, so it is called “50% Het”³[5].
+
+2. **Super**: This term is used when a python carries two copies of a certain gene, making it homozygous for that trait⁴[3]. This is often seen in dominant or co-dominant genes. For example, a "Super Pastel" ball python carries two copies of the Pastel gene⁴[3].
+
+3. **Normal**: This term is used to describe a python that does not carry any morph genes. These pythons display the wild-type appearance of the species¹[2].
+
+Remember, these terms are used to describe the genetic makeup of the python, which determines its physical appearance or phenotype. It's also important to note that these terms are most commonly used in the context of breeding, as breeders use them to predict the possible outcomes of different pairings¹[2].
+
+Source: Conversation with Bing, 4/24/2024
+(1) Hets explained in plain English - Ball Pythons - MorphMarket Reptile .... https://community.morphmarket.com/t/hets-explained-in-plain-english/28124.
+(2) 100%, 66%, 50% het explaination help - Ball-Pythons.net. https://ball-pythons.net/forums/showthread.php?225712-100-66-50-het-explaination-help.
+(3) A Lesson in Basic Genetics - ball-pythons.net. https://ball-pythons.net/forums/showthread.php?52847-A-Lesson-in-Basic-Genetics.
+(4) 13 Types of Ball Python Morphs (Pictures & Terminology) - Reptile Advisor. https://www.reptileadvisor.com/ball-python-morphs/.
+(5) python - Difference between super() and calling superclass directly .... https://stackoverflow.com/questions/21639788/difference-between-super-and-calling-superclass-directly.
+
+
+
+
+
+
+I strongly encourage you to consider switching to slash commands. It will make this process much easier both for you and for your users. Options with a few valid choices can show a nice little choices list in the UI, and it also becomes much easier to reason about how the command will be interpreted. And you won't have to do more complicated string parsing
