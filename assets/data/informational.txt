@@ -254,31 +254,6 @@ window.morphs = [
 [1]: https://snakesnuggles.com/everything-you-need-to-know-about-snake-morphs/ ""
 [2]: https://snakesnuggles.com/what-is-a-snake-morph/ ""
 [3]: https://snakecareguide.com/king-snake-morphs/ ""
-
-Creating new snake morphs involves a combination of chance mutations and intentional breeding¹[1][1][2]. Here's a brief overview of the process:
-
-1. **Chance Mutations**: Sometimes, a snake is born with a genetic mutation that results in a unique physical characteristic, such as a different color or pattern¹[1][1]. This is a natural, random genetic change¹[1][1].
-
-2. **Selective Breeding**: Breeders can choose specific traits to breed for, such as color patterns or size¹[1][1]. By breeding snakes with these desired traits, they can create offspring that also exhibit these traits¹[1][1].
-
-3. **Crossbreeding**: This involves breeding two different species or morphs together to create a new hybrid¹[1][1]. The offspring will have a combination of traits from both parents¹[1][1].
-
-4. **Line Breeding**: This involves breeding closely related snakes to maintain or accentuate certain traits¹[1][1]. This can help to ensure that a particular trait is passed on to future generations¹[1][1].
-
-5. **Use of Punnett Squares**: These are tools used by breeders to predict the possible genetic outcomes of a breeding pair¹[1][1]. They can help breeders make informed pairing decisions¹[1][1].
-
-Once a new morph is created, it can be bred with other snakes to create even more unique morphs¹[1][1]. However, it's important to note that breeding for specific traits should be done responsibly, as it can sometimes lead to health issues in the snakes¹[1][1].
-
-Please note that this is a simplified explanation and the actual process can be quite complex. If you're interested in snake breeding, I recommend doing further research or consulting with a professional breeder. Let me know if you have any other questions! 😊
-
-Source: Conversation with Bing, 4/24/2024
-(1) Snake Morphs Demystified: Exploring Genetic Variations and Breeding .... https://snakesnuggles.com/everything-you-need-to-know-about-snake-morphs/.
-(2) Snake Morph Guide: Explore Genetic Mutations & Unique Reptile Traits. https://snakesnuggles.com/what-is-a-snake-morph/.
-(3) King Snake Morphs. https://snakecareguide.com/king-snake-morphs/.
-
-
-
-
 [1]: https://hognose-morphs.com/calculator ""
 [2]: https://snakesnuggles.com/snake-morphs/ ""
 [3]: https://bing.com/search?q=how+to+calculate+possible+offspring+of+snake+morphs ""
@@ -428,39 +403,3 @@ function getBlendedTrait(trait1, trait2) {
 ```
 
 Please note that this is a very simplified example and the actual implementation would be much more complex, taking into account the specific traits and rules of snake genetics. If you're interested in creating such a tool, I recommend studying genetics and consulting with a herpetologist or a professional breeder. Let me know if you have any other questions! 😊
-
-
-
-
-
-
-
-[1]: https://ball-pythons.net/forums/showthread.php?225712-100-66-50-het-explaination-help ""
-[2]: https://community.morphmarket.com/t/hets-explained-in-plain-english/28124 ""
-[3]: https://www.reptileadvisor.com/ball-python-morphs/ ""
-[4]: https://stackoverflow.com/questions/21639788/difference-between-super-and-calling-superclass-directly ""
-[5]: https://ball-pythons.net/forums/showthread.php?52847-A-Lesson-in-Basic-Genetics ""
-
-In the world of pythons, particularly when discussing morphs, the terms "het", "super", and "normal" are used to describe different genetic conditions:
-
-1. **Het**: This is short for heterozygous, which means the python carries one copy of a recessive gene¹[2]. For example, if you have a python that is "100% het for Albino", it means the python carries one copy of the Albino gene but does not visually express it¹[2]. The percentages (100%, 66%, 50%) refer to the probability that the python carries the gene²[1]³[5]. For instance, in a Het x Normal pairing, each offspring has a 50% chance of carrying the gene, so it is called “50% Het”³[5].
-
-2. **Super**: This term is used when a python carries two copies of a certain gene, making it homozygous for that trait⁴[3]. This is often seen in dominant or co-dominant genes. For example, a "Super Pastel" ball python carries two copies of the Pastel gene⁴[3].
-
-3. **Normal**: This term is used to describe a python that does not carry any morph genes. These pythons display the wild-type appearance of the species¹[2].
-
-Remember, these terms are used to describe the genetic makeup of the python, which determines its physical appearance or phenotype. It's also important to note that these terms are most commonly used in the context of breeding, as breeders use them to predict the possible outcomes of different pairings¹[2].
-
-Source: Conversation with Bing, 4/24/2024
-(1) Hets explained in plain English - Ball Pythons - MorphMarket Reptile .... https://community.morphmarket.com/t/hets-explained-in-plain-english/28124.
-(2) 100%, 66%, 50% het explaination help - Ball-Pythons.net. https://ball-pythons.net/forums/showthread.php?225712-100-66-50-het-explaination-help.
-(3) A Lesson in Basic Genetics - ball-pythons.net. https://ball-pythons.net/forums/showthread.php?52847-A-Lesson-in-Basic-Genetics.
-(4) 13 Types of Ball Python Morphs (Pictures & Terminology) - Reptile Advisor. https://www.reptileadvisor.com/ball-python-morphs/.
-(5) python - Difference between super() and calling superclass directly .... https://stackoverflow.com/questions/21639788/difference-between-super-and-calling-superclass-directly.
-
-
-
-
-
-
-I strongly encourage you to consider switching to slash commands. It will make this process much easier both for you and for your users. Options with a few valid choices can show a nice little choices list in the UI, and it also becomes much easier to reason about how the command will be interpreted. And you won't have to do more complicated string parsing

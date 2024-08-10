@@ -1,0 +1,17 @@
+const morphs = [ // examples
+    {
+        name: 'Morph1',
+        type: 'Type1',
+        rarity: 'Common',
+        characteristics: {
+            color: {},
+            size: {},
+            weight: {},
+            pattern: {},
+            lifespan: {},
+            temperament: {}
+        },
+    },
+
+    // more here
+];

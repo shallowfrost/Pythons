@@ -1,5 +1,5 @@
 //handlers.js
-import * as dataMassExport from '../data/data.js';
+import * as dataMassExport from '../../data/data.js';
 
 
 

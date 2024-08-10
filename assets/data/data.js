@@ -1,5 +1,5 @@
 // data.js
-import { handleHelpCommand, handleListCommand, handlePriceCommand } from '../scripts/handlers.js';
+import { handleHelpCommand, handleListCommand, handlePriceCommand } from '../scripts/js/handlers.js';
 
 const dataMassExport = {
   'commands': [

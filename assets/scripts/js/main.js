@@ -1,6 +1,6 @@
 // main.js
 
-import { dataMassExport } from '../data/data.js';
+import { dataMassExport } from '../../data/data.js';
 import { botResponse } from './bot.mjs';
 
 const commands = dataMassExport.commands
